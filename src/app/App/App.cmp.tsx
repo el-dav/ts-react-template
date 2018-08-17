@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import styled from 'styled-components';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Drawer from 'material-ui/Drawer';
-import List, { ListItem, ListItemText } from 'material-ui/List';
+import { Link } from 'react-router-dom';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+
+import styled from 'styled';
 
 import { Props } from './App.typ';
 
-const AppContainer = styled.div`
+const AppContainer = styled('div')`
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 `;
 
-const Body = styled.div`
+const Body = styled('div')`
   flex: 1;
   width: 100%;
   display: flex;
   flex-direction: row;
 `;
 
-const Content = styled.div`
+const Content = styled('div')`
   width: 100%;
   flex: 1;
   display: flex;

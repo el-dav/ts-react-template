@@ -1,8 +1,8 @@
 import { createSelector } from 'reselect';
 
-import { State } from './reducers';
+import { AppState } from 'ducks';
 
-const selectState = (state): State => state.screen;
+const selectState = (state: AppState) => state.screen;
 
 export const selectScreenData = createSelector([selectState], state => state);
 

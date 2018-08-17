@@ -1,7 +1,5 @@
 import { ofType, combineEpics } from 'redux-observable';
-import { tap } from 'rxjs/operators/tap';
-import { delay } from 'rxjs/operators/delay';
-import { mergeMap } from 'rxjs/operators/mergeMap';
+import { delay, mapTo, tap } from 'rxjs/operators';
 // import { ignoreElements } from 'rxjs/operators/ignoreElements';
 
 import { increase } from './actions';
@@ -14,7 +12,7 @@ const async = action$ =>
     tap(() => {
       global.console.log('doing async action');
     }),
-    mergeMap(() => [increase()])
+    mapTo(increase())
   );
 
 export default combineEpics(async);

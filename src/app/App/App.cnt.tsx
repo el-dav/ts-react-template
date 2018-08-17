@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
 
-import App from './App.cmp';
+import { AppState } from 'ducks';
 
+import App from './App.cmp';
 import { StateProps, OwnProps } from './App.typ';
 
-const mapStateToProps = (state, ownProps: OwnProps): StateProps => ({
+const mapStateToProps = (state: AppState, ownProps: OwnProps): StateProps => ({
   className: ownProps.className
 });
 

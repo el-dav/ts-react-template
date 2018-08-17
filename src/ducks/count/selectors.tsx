@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 
-import { State } from './reducers';
+import { AppState } from 'ducks';
 
-const selectState = (state): State => state.count;
+const selectState = (state: AppState) => state.count;
 
 export const selectTotal = createSelector([selectState], state => state.total);

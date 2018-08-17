@@ -17,7 +17,11 @@
     "noImplicitAny": false,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "keyofStringsOnly": true, // workaround for material-ui issue
+    "paths": {
+      "styled": ["utils/styled"] // This mapping is relative to "baseUrl"
+    }
   },
   "exclude": [
     "node_modules",

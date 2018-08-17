@@ -3,7 +3,7 @@ import _forEach from 'lodash/forEach';
 import _kebabCase from 'lodash/kebabCase';
 import _memoize from 'lodash/memoize';
 import _throttle from 'lodash/throttle';
-import styled from 'styled-components';
+import styled from 'react-emotion';
 
 import { Props, ScreenData } from './ScreenWatcher.typ';
 
@@ -21,7 +21,7 @@ const getScreenClassFunc = (screens: ScreenData) => {
 };
 const getScreenClass = _memoize(getScreenClassFunc);
 
-const Wrapper = styled.div`
+const Wrapper = styled('div')`
   width: 100%, auto;
   height: 100%;
 `;

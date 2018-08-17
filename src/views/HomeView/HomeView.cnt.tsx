@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
 
-import HomeView from './HomeView.cmp';
+import { AppState } from 'ducks';
 
+import HomeView from './HomeView.cmp';
 import { StateProps, OwnProps } from './HomeView.typ';
 
-const mapStateToProps = (state, ownProps: OwnProps): StateProps => ({
+const mapStateToProps = (state: AppState, ownProps: OwnProps): StateProps => ({
   className: ownProps.className
 });
 

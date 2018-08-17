@@ -1,10 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import Button from 'material-ui/Button';
+import Button from '@material-ui/core/Button';
+
+import styled from 'styled';
 
 import { Props } from './TotalView.typ';
 
-const Page = styled.div`
+const Page = styled('div')`
   flex: 1;
   padding: 10px;
   display: flex;
@@ -13,7 +14,7 @@ const Page = styled.div`
   justify-content: center;
 `;
 
-const ButtonContainer = styled.div`
+const ButtonContainer = styled('div')`
   display: flex;
   flex-direction: row;
   align-items: center;

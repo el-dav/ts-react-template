@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import {
-  browserHistory,
-  Route,
-  Router,
-  Redirect,
-  IndexRoute
-} from 'react-router';
-import { syncHistoryWithStore } from 'react-router-redux';
+import { Route, Switch } from 'react-router-dom';
 
-import store from 'app/store';
-import App from 'app/App/App.cnt';
-import HomeView from 'views/HomeView/HomeView.cnt';
-import TotalView from 'views/TotalView/TotalView.cnt';
-import ScreenWatcher from 'assets/ScreenWatcher/ScreenWatcher.cnt';
-import DevTools from 'assets/DevTools/DevTools.cnt';
+import App from 'app/App';
+import HomeView from 'views/HomeView';
+import TotalView from 'views/TotalView';
+import ScreenWatcher from 'assets/ScreenWatcher';
+import DevTools from 'assets/DevTools';
+import styled from 'styled';
 
 import { Props } from './Root.typ';
-
-const history = syncHistoryWithStore(browserHistory, store);
 
 const RootContainer = styled(ScreenWatcher)`
   width: 100%;
@@ -40,17 +30,12 @@ class Root extends Component<Props> {
     const { className } = this.props;
     return (
       <RootContainer className={`${className || ''}`}>
-        <Router history={history}>
-          <Route path="/" component={App}>
-            <IndexRoute component={HomeView} onEnter={this.checkAuth} />
-            <Route
-              path="/total"
-              component={TotalView}
-              onEnter={this.checkAuth}
-            />
-            <Redirect from="*" to="/" />
-          </Route>
-        </Router>
+        <App>
+          <Switch>
+            <Route exact path="/" component={HomeView} />
+            <Route exact path="/total" component={TotalView} />
+          </Switch>
+        </App>
         {DevTools && <DevTools />}
       </RootContainer>
     );
