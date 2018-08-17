@@ -7,7 +7,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import styled from 'styled';
+import styled from 'utils/styled';
 
 import { Props } from './App.typ';
 
