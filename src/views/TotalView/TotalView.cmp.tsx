@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-import styled from 'styled';
+import styled from 'utils/styled';
 
 import { Props } from './TotalView.typ';
 

@@ -6,7 +6,7 @@ import HomeView from 'views/HomeView';
 import TotalView from 'views/TotalView';
 import ScreenWatcher from 'assets/ScreenWatcher';
 import DevTools from 'assets/DevTools';
-import styled from 'styled';
+import styled from 'utils/styled';
 
 import { Props } from './Root.typ';
 
