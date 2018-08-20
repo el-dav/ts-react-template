@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 
 import Story from 'assets/Story';
 
@@ -8,9 +9,9 @@ import ConnectedTotalView from './TotalView.cnt';
 
 const stories = storiesOf('TotalView', module);
 
-const increase = () => undefined;
-const increaseAsync = () => undefined;
-const decrease = () => undefined;
+const increase = action('increase');
+const increaseAsync = action('increaseAsync');
+const decrease = action('decrease');
 
 stories.add('Default', () => (
   <Story>
