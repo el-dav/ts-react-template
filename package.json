@@ -41,6 +41,7 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.10",
     "@storybook/addon-info": "^4.0.0-alpha.3",
     "@storybook/react": "^4.0.0-alpha.3",
     "@types/lodash": "^4.14.108",
@@ -54,6 +55,7 @@
     "@types/redux-devtools": "^3.0.44",
     "@types/redux-devtools-dock-monitor": "^1.1.33",
     "@types/redux-devtools-log-monitor": "^1.0.34",
+    "@types/storybook__addon-actions": "^3.4.1",
     "@types/storybook__react": "^3.0.9",
     "@types/webpack": "^4.1.4",
     "@types/webpack-env": "^1.13.6",
