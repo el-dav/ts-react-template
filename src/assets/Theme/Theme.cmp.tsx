@@ -3,15 +3,16 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { ThemeProvider } from 'emotion-theming';
 
-import theme, { muiTheme } from 'styles/theme';
+import { muiTheme, lightTheme } from 'styles/theme';
 
-import 'styles/theme/animations.css';
-import 'styles/../index.css';
+import { injectGlobalStyles, injectGlobalAnimations } from './styleUtils';
 
+injectGlobalStyles();
+injectGlobalAnimations();
 injectTapEventPlugin();
 
 const Theme: React.SFC<{}> = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={lightTheme()}>
     <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
   </ThemeProvider>
 );

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Props } from './HomeView.typ';
 
-const HomeView = ({ className }: Props) => (
+const HomeView: React.SFC<Props> = ({ className }) => (
   <div className={className || ''}>Home</div>
 );
 
