@@ -22,13 +22,13 @@ const ButtonContainer = styled('div')`
   padding: 10px;
 `;
 
-const TotalView = ({
+const TotalView: React.SFC<Props> = ({
   className,
   total,
   increase,
   decrease,
   increaseAsync
-}: Props) => (
+}) => (
   <Page className={className || ''}>
     {`Total: ${total}`}
     <ButtonContainer>
