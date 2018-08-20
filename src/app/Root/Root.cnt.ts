@@ -1,12 +1,10 @@
 import { connect } from 'react-redux';
-import { Dispatch } from 'redux';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 
-import { AppState } from 'ducks';
+import { AppState, AppDispatch } from 'ducks';
 
 import Root from './Root.cmp';
-import { StateProps, DispatchProps } from './Root.typ';
-import { OwnProps } from '../App/App.typ';
+import { StateProps, DispatchProps, OwnProps } from './Root.typ';
 
 const mapStateToProps = (
   state: AppState,
@@ -15,7 +13,7 @@ const mapStateToProps = (
   className: ownProps.className
 });
 
-const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
+const mapDispatchToProps = (dispatch: AppDispatch): DispatchProps => ({
   checkAuth: () => {
     global.console.log('checking auth');
   }

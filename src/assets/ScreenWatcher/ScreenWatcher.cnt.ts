@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
 import { AppState } from 'ducks/ducks';
 import { selectScreenData } from 'ducks/screen/selectors';
@@ -13,8 +14,8 @@ const mapStateToProps = (state: AppState, ownProps: OwnProps): StateProps => ({
   screenData: selectScreenData(state)
 });
 
-const mapDispatchToProps = (dispatch): DispatchProps => ({
-  screenResize: (width, height) => {
+const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
+  screenResize: (width: number, height: number) => {
     dispatch(screenResize(width, height));
   }
 });

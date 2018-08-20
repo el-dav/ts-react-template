@@ -1,16 +1,4 @@
-export interface ScreenData {
-  xs: boolean;
-  gtXs: boolean;
-  sm: boolean;
-  gtSm: boolean;
-  md: boolean;
-  gtMd: boolean;
-  lg: boolean;
-  gtLg: boolean;
-  xl: boolean;
-  width: number;
-  height: number;
-}
+import { State as ScreenData } from 'ducks/screen/reducers';
 
 export interface OwnProps {
   className?: string;

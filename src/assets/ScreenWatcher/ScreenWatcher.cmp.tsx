@@ -5,12 +5,14 @@ import _memoize from 'lodash/memoize';
 import _throttle from 'lodash/throttle';
 import styled from 'react-emotion';
 
-import { Props, ScreenData } from './ScreenWatcher.typ';
+import { State as ScreenData } from 'ducks/screen/reducers';
 
-const getScreenClassFunc = (screens: ScreenData) => {
+import { Props } from './ScreenWatcher.typ';
+
+const getScreenClassFunc = (screenData: ScreenData) => {
   let className = '';
 
-  _forEach(screens, (value, key) => {
+  _forEach(screenData, (value, key) => {
     if (value && key !== 'width' && key !== 'height') {
       const formattedKey = _kebabCase(key);
       className += ` screen-${formattedKey}`;

@@ -2,12 +2,8 @@ import { createSelector } from 'reselect';
 
 import { AppState } from 'ducks';
 
-const selectState = (state: AppState) => state.screen;
-
+export const selectState = (state: AppState) => state.screen;
 export const selectScreenData = createSelector([selectState], state => state);
-
-export const selectScreenState = state => state.screen;
-
 export const selectIsXs = createSelector([selectState], state => state.xs);
 export const selectIsGtXs = createSelector([selectState], state => state.gtXs);
 export const selectIsSm = createSelector([selectState], state => state.sm);
