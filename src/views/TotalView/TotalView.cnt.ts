@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { AppState } from 'ducks';
+import { AppState, AppDispatch } from 'ducks';
 import { selectTotal } from 'ducks/count/selectors';
 import { increase, decrease, increaseAsync } from 'ducks/count/actions';
 
@@ -12,7 +12,7 @@ const mapStateToProps = (state: AppState, ownProps: OwnProps): StateProps => ({
   total: selectTotal(state)
 });
 
-const mapDispatchToProps = (dispatch): DispatchProps => ({
+const mapDispatchToProps = (dispatch: AppDispatch): DispatchProps => ({
   increase: () => {
     dispatch(increase());
   },

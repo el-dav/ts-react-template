@@ -5,8 +5,7 @@ import { ThemeProvider } from 'emotion-theming';
 
 import theme, { muiTheme } from 'styles/theme';
 
-import 'styles/animations.css';
-import 'resources/fonts/fontawesome/css/fontawesome-all.css';
+import 'styles/theme/animations.css';
 import 'styles/../index.css';
 
 injectTapEventPlugin();

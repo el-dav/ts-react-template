@@ -10,7 +10,7 @@ import Store from 'assets/Store';
 
 import Root from 'app/Root';
 
-const renderAppForRoot = RootCmp => {
+const renderAppForRoot = (RootCmp: typeof Root) => {
   render(
     <Store>
       <Theme>

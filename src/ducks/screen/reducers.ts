@@ -1,4 +1,7 @@
-import { SCREEN_RESIZE } from './constants';
+import { ActionType } from 'typesafe-actions';
+
+import * as actions from './actions';
+import constants from './constants';
 
 const SM = 600;
 const MD = 960;
@@ -18,6 +21,8 @@ export type State = Readonly<{
   width: number;
   height: number;
 }>;
+
+export type Action = ActionType<typeof actions>;
 
 const initialSizes: State = {
   xs: false,
@@ -73,10 +78,13 @@ const getInitialState = () =>
     ? getSizes(window.innerWidth, window.innerHeight)
     : initialSizes;
 
-const screen = (state = getInitialState(), action): State => {
-  switch (action.type) {
-    case SCREEN_RESIZE:
-      return getSizes(action.width, action.height);
+const screen = (
+  state = getInitialState(),
+  { type, payload }: Action
+): State => {
+  switch (type) {
+    case constants.SCREEN_RESIZE:
+      return getSizes(payload.width, payload.height);
     default:
       return state;
   }
