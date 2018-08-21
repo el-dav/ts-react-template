@@ -2,19 +2,78 @@ import { createSelector } from 'reselect';
 
 import { AppState } from 'ducks';
 
+import { SIZES } from './config';
+
 export const selectState = (state: AppState) => state.screen;
-export const selectScreenData = createSelector([selectState], state => state);
-export const selectIsXs = createSelector([selectState], state => state.xs);
-export const selectIsGtXs = createSelector([selectState], state => state.gtXs);
-export const selectIsSm = createSelector([selectState], state => state.sm);
-export const selectIsGtSm = createSelector([selectState], state => state.gtSm);
-export const selectIsMd = createSelector([selectState], state => state.md);
-export const selectIsGtMd = createSelector([selectState], state => state.gtMd);
-export const selectIsLg = createSelector([selectState], state => state.lg);
-export const selectIsGtLg = createSelector([selectState], state => state.gtLg);
-export const selectIsXl = createSelector([selectState], state => state.xl);
+
 export const selectWidth = createSelector([selectState], state => state.width);
 export const selectHeight = createSelector(
   [selectState],
   state => state.height
+);
+
+export const selectIsXs = createSelector(
+  [selectWidth],
+  width => width < SIZES.SM
+);
+export const selectIsGtXs = createSelector(
+  [selectWidth],
+  width => width >= SIZES.SM
+);
+export const selectIsSm = createSelector(
+  [selectWidth],
+  width => width >= SIZES.SM && width < SIZES.MD
+);
+export const selectIsGtSm = createSelector(
+  [selectWidth],
+  width => width >= SIZES.MD
+);
+export const selectIsMd = createSelector(
+  [selectWidth],
+  width => width >= SIZES.MD && width < SIZES.LG
+);
+export const selectIsGtMd = createSelector(
+  [selectWidth],
+  width => width >= SIZES.LG
+);
+export const selectIsLg = createSelector(
+  [selectWidth],
+  width => width >= SIZES.LG && width < SIZES.XL
+);
+export const selectIsGtLg = createSelector(
+  [selectWidth],
+  width => width >= SIZES.XL
+);
+export const selectIsXl = createSelector(
+  [selectWidth],
+  width => width >= SIZES.XL
+);
+
+export const selectScreenData = createSelector(
+  [
+    selectWidth,
+    selectHeight,
+    selectIsXs,
+    selectIsGtXs,
+    selectIsSm,
+    selectIsGtSm,
+    selectIsMd,
+    selectIsGtMd,
+    selectIsLg,
+    selectIsGtLg,
+    selectIsXl
+  ],
+  (width, height, xs, gtXs, sm, gtSm, md, gtMd, lg, gtLg, xl) => ({
+    width,
+    height,
+    xs,
+    gtXs,
+    sm,
+    gtSm,
+    md,
+    gtMd,
+    lg,
+    gtLg,
+    xl
+  })
 );
