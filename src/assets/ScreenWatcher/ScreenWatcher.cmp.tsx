@@ -5,9 +5,7 @@ import _memoize from 'lodash/memoize';
 import _throttle from 'lodash/throttle';
 import styled from 'react-emotion';
 
-import { State as ScreenData } from 'ducks/screen/reducers';
-
-import { Props } from './ScreenWatcher.typ';
+import { Props, ScreenData } from './ScreenWatcher.typ';
 
 const getScreenClassFunc = (screenData: ScreenData) => {
   let className = '';

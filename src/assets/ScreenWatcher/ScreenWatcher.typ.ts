@@ -1,4 +1,6 @@
-import { State as ScreenData } from 'ducks/screen/reducers';
+import { selectScreenData } from 'ducks/screen/selectors';
+
+export type ScreenData = ReturnType<typeof selectScreenData>;
 
 export interface OwnProps {
   className?: string;

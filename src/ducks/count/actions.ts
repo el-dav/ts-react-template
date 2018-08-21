@@ -1,4 +1,5 @@
 import { action } from 'typesafe-actions';
+
 import constants from './constants';
 
 export const increase = () => action(constants.INCREASE);
