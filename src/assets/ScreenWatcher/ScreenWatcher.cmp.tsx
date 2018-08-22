@@ -65,7 +65,7 @@ class ScreenWatcher extends Component<Props> {
       <Wrapper
         {...rest}
         className={`screen-watcher ${this.props.className ||
-          ''} ${getScreenClass(screenData)}`}
+          ''}${getScreenClass(screenData)}`}
       >
         {this.props.children}
       </Wrapper>

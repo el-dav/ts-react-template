@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScreenWatcher renders the Component correctly for lg size 1`] = `
+<div
+  className="screen-watcher screen-gt-xs screen-gt-sm screen-gt-md screen-lg css-1ow008w"
+/>
+`;
+
+exports[`ScreenWatcher renders the Component correctly for md size 1`] = `
+<div
+  className="screen-watcher screen-gt-xs screen-gt-sm screen-md css-1ow008w"
+/>
+`;
+
+exports[`ScreenWatcher renders the Component correctly for sm size 1`] = `
+<div
+  className="screen-watcher screen-gt-xs screen-sm css-1ow008w"
+/>
+`;
+
+exports[`ScreenWatcher renders the Component correctly for xl size 1`] = `
+<div
+  className="screen-watcher screen-gt-xs screen-gt-sm screen-gt-md screen-gt-lg screen-xl css-1ow008w"
+/>
+`;
+
+exports[`ScreenWatcher renders the Component correctly for xs size 1`] = `
+<div
+  className="screen-watcher screen-xs css-1ow008w"
+/>
+`;
+
+exports[`ScreenWatcher renders the Container correctly 1`] = `
+<div
+  className="screen-watcher screen-gt-xs screen-gt-sm screen-md css-1ow008w"
+/>
+`;
