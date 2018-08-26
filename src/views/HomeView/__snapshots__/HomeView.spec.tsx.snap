@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeView renders the Component correctly 1`] = `
+<div
+  className=""
+>
+  Home
+</div>
+`;
+
+exports[`HomeView renders the Container correctly 1`] = `
+<div
+  className=""
+>
+  Home
+</div>
+`;
