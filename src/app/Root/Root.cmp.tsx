@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import App from 'app/App';
-import HomeView from 'views/HomeView';
-import TotalView from 'views/TotalView';
-import ScreenWatcher from 'assets/ScreenWatcher';
-import DevTools from 'assets/DevTools';
-import styled from 'utils/styled';
+import App from '~/app/App';
+import HomeView from '~/views/HomeView';
+import TotalView from '~/views/TotalView';
+import ScreenWatcher from '~/assets/ScreenWatcher';
+import DevTools from '~/assets/DevTools';
+import styled from '~/utils/styled';
 
 import { Props } from './Root.typ';
 

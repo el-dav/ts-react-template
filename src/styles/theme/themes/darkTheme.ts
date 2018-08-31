@@ -1,8 +1,8 @@
-import { themeFromBaseTheme } from 'styles/theme/appTheme';
-import { baseThemeFromPalette } from 'styles/theme/baseTheme';
-import { CoreColors, coreColors } from 'styles/theme/coreColors';
-import { paletteFromCoreColors } from 'styles/theme/palette';
-import { darken, lighten } from 'styles/theme/utils';
+import { themeFromBaseTheme } from '~/styles/theme/appTheme';
+import { baseThemeFromPalette } from '~/styles/theme/baseTheme';
+import { CoreColors, coreColors } from '~/styles/theme/coreColors';
+import { paletteFromCoreColors } from '~/styles/theme/palette';
+import { darken, lighten } from '~/styles/theme/utils';
 
 const getDarkPrimary = (color: string) => ({
   '0': darken(color, 30),

@@ -2,7 +2,7 @@ import { combineEpics } from 'redux-observable';
 import { delay, mapTo, tap, filter } from 'rxjs/operators';
 import { isOfType } from 'typesafe-actions';
 
-import { AppEpic } from 'ducks';
+import { AppEpic } from '~/ducks';
 
 import { increase } from './actions';
 import constants from './constants';

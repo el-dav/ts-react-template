@@ -1,4 +1,4 @@
-import { Palette } from 'styles/theme/palette';
+import { Palette } from '~/styles/theme/palette';
 
 const text = (palette: Palette) => ({
   dark: palette.secondary[3],

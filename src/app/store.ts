@@ -1,10 +1,10 @@
 import { applyMiddleware, compose, createStore } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
 
-import { AppStore, AppAction, AppState } from 'ducks';
-import ducks from 'ducks/ducks';
-import epics from 'ducks/epics';
-import DevTools from 'assets/DevTools/DevTools.cnt';
+import { AppStore, AppAction, AppState } from '~/ducks';
+import ducks from '~/ducks/ducks';
+import epics from '~/ducks/epics';
+import DevTools from '~/assets/DevTools/DevTools.cnt';
 
 const epicMiddleware = createEpicMiddleware<AppAction, AppAction, AppState>();
 
