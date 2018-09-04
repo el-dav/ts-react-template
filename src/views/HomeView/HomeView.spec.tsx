@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Story from 'assets/Story';
+import Story from '~/assets/Story';
 
 import HomeViewCmp from './HomeView.cmp';
 import HomeViewCnt from './HomeView.cnt';

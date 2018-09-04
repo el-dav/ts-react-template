@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 
-import { AppState, AppDispatch } from 'ducks';
+import { AppState, AppDispatch } from '~/ducks';
 
 import Root from './Root.cmp';
 import { StateProps, DispatchProps, OwnProps } from './Root.typ';

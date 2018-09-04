@@ -1,4 +1,4 @@
-import { initialAppState, AppState } from 'ducks';
+import { initialAppState, AppState } from '~/ducks';
 
 import * as actions from './actions';
 import * as selectors from './selectors';

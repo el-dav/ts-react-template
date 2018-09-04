@@ -3,7 +3,7 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { ThemeProvider } from 'emotion-theming';
 
-import { muiTheme, lightTheme } from 'styles/theme';
+import { muiTheme, lightTheme } from '~/styles/theme';
 
 import { injectGlobalStyles, injectGlobalAnimations } from './styleUtils';
 
