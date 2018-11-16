@@ -7,7 +7,7 @@ import { AppEpic } from '~/ducks';
 import { increase } from './actions';
 import constants from './constants';
 
-const async: AppEpic = (action$, state$) =>
+export const async: AppEpic = (action$, state$) =>
   action$.pipe(
     filter(isOfType(constants.INCREASE_ASYNC)),
     delay(2000),

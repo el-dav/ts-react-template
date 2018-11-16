@@ -66,6 +66,7 @@
     "babel-plugin-emotion": "^9.2.6",
     "concurrently": "^3.5.1",
     "cross-env": "^5.1.4",
+    "husky": "^1.1.4",
     "jest": "^23.5.0",
     "node-sass-chokidar": "^1.2.2",
     "prettier": "^1.12.1",
@@ -83,6 +84,11 @@
   "jest": {
     "moduleNameMapper": {
       "~(.*)$": "<rootDir>/src/$1"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn test --ci"
     }
   }
 }
