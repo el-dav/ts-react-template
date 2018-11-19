@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 
-import { AppState, AppDispatch } from 'ducks/ducks';
-import { selectScreenData } from 'ducks/screen/selectors';
-import { screenResize } from 'ducks/screen/actions';
+import { AppState, AppDispatch } from '~/ducks/ducks';
+import { selectScreenData } from '~/ducks/screen/selectors';
+import { screenResize } from '~/ducks/screen/actions';
 
 import ScreenWatcher from './ScreenWatcher.cmp';
 

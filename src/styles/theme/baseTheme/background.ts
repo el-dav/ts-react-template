@@ -1,5 +1,5 @@
-import { darkest, lightest } from 'styles/theme/utils';
-import { Palette } from 'styles/theme/palette';
+import { darkest, lightest } from '~/styles/theme/utils';
+import { Palette } from '~/styles/theme/palette';
 
 const background = (palette: Palette) => ({
   primary: palette.primary[0],

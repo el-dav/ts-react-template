@@ -1,4 +1,4 @@
-import { selectScreenData } from 'ducks/screen/selectors';
+import { selectScreenData } from '~/ducks/screen/selectors';
 
 export type ScreenData = ReturnType<typeof selectScreenData>;
 

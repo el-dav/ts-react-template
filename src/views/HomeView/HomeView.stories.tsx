@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Story from 'assets/Story';
+import Story from '~/assets/Story';
 
 import HomeView from './HomeView.cmp';
 import ConnectedHomeView from './HomeView.cnt';

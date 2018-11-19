@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { AppState } from 'ducks';
+import { AppState } from '~/ducks';
 
 import App from './App.cmp';
 import { StateProps, OwnProps } from './App.typ';

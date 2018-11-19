@@ -2,12 +2,12 @@ import { combineEpics } from 'redux-observable';
 import { delay, mapTo, tap, filter } from 'rxjs/operators';
 import { isOfType } from 'typesafe-actions';
 
-import { AppEpic } from 'ducks';
+import { AppEpic } from '~/ducks';
 
 import { increase } from './actions';
 import constants from './constants';
 
-const async: AppEpic = (action$, state$) =>
+export const async: AppEpic = (action$, state$) =>
   action$.pipe(
     filter(isOfType(constants.INCREASE_ASYNC)),
     delay(2000),

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Theme from 'assets/Theme';
-import Store from 'assets/Store';
+import Theme from '~/assets/Theme';
+import Store from '~/assets/Store';
 
 interface Props {
   isConnected?: boolean;

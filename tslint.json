@@ -12,7 +12,6 @@
     "rxjs-no-add": { "severity": "error" },
     "rxjs-no-operator": [true, "never-prefix"],
     "rxjs-no-patched": [true, "never-prefix"],
-    "rxjs-no-wholesale": [true, "never-prefix"],
     "no-empty-interface": [false],
     "object-literal-sort-keys": [false]
   },

@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 
-import { AppState, AppDispatch } from 'ducks';
-import { selectTotal } from 'ducks/count/selectors';
-import { increase, decrease, increaseAsync } from 'ducks/count/actions';
+import { AppState, AppDispatch } from '~/ducks';
+import { selectTotal } from '~/ducks/count/selectors';
+import { increase, decrease, increaseAsync } from '~/ducks/count/actions';
 
 import TotalView from './TotalView.cmp';
 import { StateProps, DispatchProps, OwnProps } from './TotalView.typ';

@@ -1,5 +1,5 @@
-import { darken, lighten } from 'styles/theme/utils';
-import { CoreColors } from 'styles/theme/coreColors';
+import { darken, lighten } from '~/styles/theme/utils';
+import { CoreColors } from '~/styles/theme/coreColors';
 
 const getLightPrimary = (color: string) => ({
   '0': lighten(color, 100),

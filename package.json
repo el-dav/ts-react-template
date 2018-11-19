@@ -62,6 +62,7 @@
     "babel-plugin-emotion": "^9.2.11",
     "concurrently": "^4.1.0",
     "cross-env": "^5.1.4",
+    "husky": "^1.1.4",
     "jest": "^23.6.0",
     "node-sass-chokidar": "^1.3.4",
     "prettier": "^1.15.2",

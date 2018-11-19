@@ -1,4 +1,4 @@
-import { Palette } from 'styles/theme/palette';
+import { Palette } from '~/styles/theme/palette';
 
 import animationSpeed from './animationSpeed';
 import background from './background';

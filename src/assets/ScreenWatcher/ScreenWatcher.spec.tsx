@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Story from 'assets/Story';
-import { SIZES } from 'ducks/screen/config';
+import Story from '~/assets/Story';
+import { SIZES } from '~/ducks/screen/config';
 
 import ScreenWatcherCmp from './ScreenWatcher.cmp';
 import ScreenWatcherCnt from './ScreenWatcher.cnt';
