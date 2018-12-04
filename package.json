@@ -88,7 +88,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn test --ci"
+      "pre-push": "cross-env CI=true yarn test"
     }
   }
 }
